@@ -1,33 +1,21 @@
 <?php
 
+class Image{
+
+	public $url;
+	public $title;
+	
+	public function __construct($_url, $_title ) {
+        $this->url = $_url;
+		$this->title = $_title;
+	}
+}
+
 return [
-
-    /*
-    |--------------------------------------------------------------------------
-    | Third Party Services
-    |--------------------------------------------------------------------------
-    |
-    | This file is for storing the credentials for third party services such
-    | as Mailgun, Postmark, AWS and more. This file provides the de facto
-    | location for this type of information, allowing packages to have
-    | a conventional file to locate the various service credentials.
-    |
-    */
-
-    'mailgun' => [
-        'domain' => env('MAILGUN_DOMAIN'),
-        'secret' => env('MAILGUN_SECRET'),
-        'endpoint' => env('MAILGUN_ENDPOINT', 'api.mailgun.net'),
-    ],
-
-    'postmark' => [
-        'token' => env('POSTMARK_TOKEN'),
-    ],
-
-    'ses' => [
-        'key' => env('AWS_ACCESS_KEY_ID'),
-        'secret' => env('AWS_SECRET_ACCESS_KEY'),
-        'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
-    ],
-
+	new Image("buy-comics-digital-comics.png", "digital comics"),
+    new Image("buy-comics-merchandise.png", "dc merchandise"),
+    new Image("buy-comics-subscriptions.png", "subscription"),
+    new Image("buy-comics-shop-locator.png", "comic shop location"),
+    new Image("buy-dc-power-visa.svg", "dc power visa")
 ];
+

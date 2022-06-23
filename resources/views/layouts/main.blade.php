@@ -21,6 +21,7 @@
   <main>
     @yield('content')
   </main>
+  @include('partials.extra_section')
   @include ('partials.footer')
   
 </body>
