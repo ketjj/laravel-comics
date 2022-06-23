@@ -1,3 +1,9 @@
+@php
+$lista = ['characters', 'comics', 'movies', 'tv','games','collectibles',
+          'videos','fans','news','shop'
+         ]
+@endphp
+
 <header>
   <div class="k_container">
     <div>
@@ -5,21 +11,17 @@
         <img src="{{ asset('img/dc-logo.png')}}" alt="Logo DC">
       </a>
     </div>
-      
+
+    
     <div class="nav">
       <div class="nav_bar">
         <nav >
           <ul class="nav_list">
-            <li><a href="#">Characters</a></li>
-            <li><a href="#">Comics</a><li>      
-            <li><a href="#">Movies</a></li> 
-            <li><a href="#">TV</a></li>   
-            <li><a href="#">Games</a></li>  
-            <li><a href="#">Collectibles</a><li>  
-            <li><a href="#">Videos</a><li>  
-            <li><a href="#">Fans</a><li>
-            <li><a href="#">News</a><li>    
-            <li><a href="#">Shop</a><li>  
+            {{-- //CICLO IL VARIABILE $lista CREATO SOPRA--}}
+            @foreach ($lista as $el)
+              <li><a class="{{ Route::currentRouteName() === $el ? 'active' : ''}}" href="{{ route($el) }}">{{ $el }}</a></li>
+            @endforeach             
+
           </ul>
         </nav>
       </div>

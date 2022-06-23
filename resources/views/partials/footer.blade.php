@@ -54,7 +54,6 @@
 
       
     <div class="image d-flex align-items-center">
-      <img src="../assets/img/dc-logo-bg.png" alt="">
       <img src="{{ asset('img/dc-logo-bg.png') }}" alt="">
     </div>
     </div>

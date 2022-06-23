@@ -11,7 +11,7 @@
         </div>
         <div class="title">{{$com->title}}</div>
       </div>
-      @endforeach
+    @endforeach
     </div>
     <button class="btn btn-primary k_btn2">LOAD MORE</button>
     
