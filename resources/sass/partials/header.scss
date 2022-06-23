@@ -1,38 +1,62 @@
+
 @import './utilities/mixin.scss';
 @import './utilities/vars.scss';
 
 
-nav{
-  line-height: 55px;
-  }
-  .nav_bar,
-  .nav_list{
+header{
+  height: 90px;
+  background-color: white;
+  position: fixed;
+  z-index: 999;
+  width:100%;
+  .k_container{
     height: 100%;
-  }
-  ul{
-  display:flex;
-  margin-bottom: 0;
-  align-items: center;
-  }
-  .nav_list{
-    padding:0;
-  }
-  ul li {
-  height: 100%;
-  margin-right: 10px;
-  padding: 10px;
-  padding-top: 20px;
-  font-size: 12px;
-  &:hover{
-  border-bottom: 4px solid $primary-color;
-  cursor: pointer;
-  }
-  &.active{
-    background-color: lighten($primary-color, 40% ) ;
-  }
-  }
+    @include spaceBetween;
+      img{
+      width: 65px;
+      }} 
+
+      // NAV
+      nav{
+        line-height: 55px;
+        }
+        .nav_bar,
+        .nav_list{
+          height: 100%;
+        }
+
+        .nav_list{
+          padding:0;
+        }
+        ul {
+          list-style: none;
+          display: flex;
+          align-items: center;
+          margin-bottom: 0;
+          a{
+              text-decoration: none;
+              text-transform: uppercase;
+              padding: 36px 15px;
+              color: $secondary-color;
+              font-weight: 600;
+              font-size: 12px;
+              cursor: pointer;
+              &:hover,
+              &.active{
+                  color: $primary-color;
+                  border-bottom: 5px #0282f9 solid;
+                  font-weight: 700;
+              }
+          }
+        }     
+}
+.jumbotron{
+  height: 450px;
+  padding-top:90px;
+  background: url('/img/jumbotron.jpg');
+  background-size: cover;
+  background-position: contain;
   
-  a{
-  @include upper;
-  color: black;
-  }
+}
+
+

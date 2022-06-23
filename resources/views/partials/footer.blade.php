@@ -1,1 +1,1 @@
-<h1>FOOTER</h1>
+<h1 class="k_container">FOOTER</h1>

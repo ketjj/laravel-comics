@@ -1,48 +1,9 @@
-@import url(https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap);nav {
-  line-height: 55px;
-}
-
-.nav_bar,
-.nav_list {
-  height: 100%;
-}
-
-ul {
-  display: flex;
-  margin-bottom: 0;
-  align-items: center;
-}
-
-.nav_list {
-  padding: 0;
-}
-
-ul li {
-  height: 100%;
-  margin-right: 10px;
-  padding: 10px;
-  padding-top: 20px;
-  font-size: 12px;
-}
-ul li:hover {
-  border-bottom: 4px solid #0c7cec;
-  cursor: pointer;
-}
-ul li.active {
-  background-color: #c8e2fc;
-}
-
-a {
-  text-transform: uppercase;
-  color: black;
-}
-
-body {
+@import url(https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap);body {
   font-family: "Roboto Flex", sans-serif;
   line-height: 1.2;
 }
 
-k_container {
+.k_container {
   width: 68%;
   height: 100%;
   margin: 0 auto;
@@ -58,4 +19,59 @@ a {
 
 a:hover {
   text-decoration: none;
+}
+
+header {
+  height: 90px;
+  background-color: white;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+header .k_container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .k_container img {
+  width: 65px;
+}
+header nav {
+  line-height: 55px;
+}
+header .nav_bar,
+header .nav_list {
+  height: 100%;
+}
+header .nav_list {
+  padding: 0;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+header ul a {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 36px 15px;
+  color: #1c1c1c;
+  font-weight: 600;
+  font-size: 12px;
+  cursor: pointer;
+}
+header ul a:hover, header ul a.active {
+  color: #0c7cec;
+  border-bottom: 5px #0282f9 solid;
+  font-weight: 700;
+}
+
+.jumbotron {
+  height: 450px;
+  padding-top: 90px;
+  background: url("/img/jumbotron.jpg");
+  background-size: cover;
+  background-position: contain;
 }
