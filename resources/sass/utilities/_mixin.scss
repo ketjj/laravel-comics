@@ -1,0 +1,30 @@
+
+@mixin center(){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ @mixin centerColumn(){
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  }
+  
+ @mixin spaceBetween(){
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+  }
+ 
+  @mixin upper(){
+    text-transform: uppercase;
+  }
+ 
+  @mixin imageCenter(){
+    background-position: center;
+    background-size: cover;
+  }
+ 
+  @mixin pointer(){
+    cursor: pointer;
+  }

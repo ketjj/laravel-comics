@@ -1,0 +1,61 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap);nav {
+  line-height: 55px;
+}
+
+.nav_bar,
+.nav_list {
+  height: 100%;
+}
+
+ul {
+  display: flex;
+  margin-bottom: 0;
+  align-items: center;
+}
+
+.nav_list {
+  padding: 0;
+}
+
+ul li {
+  height: 100%;
+  margin-right: 10px;
+  padding: 10px;
+  padding-top: 20px;
+  font-size: 12px;
+}
+ul li:hover {
+  border-bottom: 4px solid #0c7cec;
+  cursor: pointer;
+}
+ul li.active {
+  background-color: #c8e2fc;
+}
+
+a {
+  text-transform: uppercase;
+  color: black;
+}
+
+body {
+  font-family: "Roboto Flex", sans-serif;
+  line-height: 1.2;
+}
+
+k_container {
+  width: 68%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
