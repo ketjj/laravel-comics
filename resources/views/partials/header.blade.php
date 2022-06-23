@@ -29,4 +29,6 @@
   </div>
      
 </header>
-<div class="jumbotron"></div>
+<div class="jumbotron">
+  <button class="btn btn-primary k_btn">Current Series</button>
+</div>

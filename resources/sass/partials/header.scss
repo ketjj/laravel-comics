@@ -51,12 +51,23 @@ header{
         }     
 }
 .jumbotron{
-  height: 450px;
+  min-height: 450px;
   padding-top:90px;
+  padding-bottom: 10px;
+  background-color: $primary-color;
   margin-bottom:0;
   background: url('/img/jumbotron.jpg');
   background-size: cover;
-  background-position: contain;
+  position: relative;
+  .k_btn{
+    position: absolute;
+    bottom: -20px;
+    text-transform: uppercase;
+    padding: 0.5rem 2.5rem;
+    left:240px;
+    border-radius: 0;
+    font-weight: 600;
+  }
   
 }
 

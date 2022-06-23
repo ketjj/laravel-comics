@@ -69,17 +69,30 @@ header ul a:hover, header ul a.active {
 }
 
 .jumbotron {
-  height: 450px;
+  min-height: 450px;
   padding-top: 90px;
+  padding-bottom: 10px;
+  background-color: #0c7cec;
   margin-bottom: 0;
   background: url("/img/jumbotron.jpg");
   background-size: cover;
-  background-position: contain;
+  position: relative;
+}
+.jumbotron .k_btn {
+  position: absolute;
+  bottom: -20px;
+  text-transform: uppercase;
+  padding: 0.5rem 2.5rem;
+  left: 240px;
+  border-radius: 0;
+  font-weight: 600;
 }
 
 main {
   background-color: #1c1c1c;
   color: white;
+  padding: 70px 0 40px 0;
+  text-align: center;
 }
 main .k_container {
   min-height: 120px;
@@ -87,13 +100,16 @@ main .k_container {
   flex-wrap: wrap;
   align-items: center;
 }
+main .k_container a {
+  background-color: azure;
+}
 main .k_container .k_card {
   width: 14%;
   height: 200px;
-  margin-top: 50px;
   margin-left: 20px;
   opacity: 0.7;
   overflow: hidden;
+  margin-bottom: 30px;
 }
 main .k_container .k_card:hover {
   opacity: 1;
@@ -109,6 +125,106 @@ main .k_container .k_card .image img {
 }
 main .k_container .k_card .image .title {
   font-size: 10px;
-  text-transform: uppercase;
   color: white;
+}
+main .k_btn2 {
+  padding: 0.25rem 3rem;
+  border-radius: 0;
+  margin: 20px 0;
+}
+
+footer {
+  background-color: #1c1c1c;
+}
+footer .upper {
+  height: 350px;
+  background: url("/img/footer-bg.jpg") no-repeat top;
+  background-size: cover;
+  overflow: hidden;
+}
+footer .upper .col {
+  padding-left: 0;
+  height: 200px;
+}
+footer .upper img {
+  height: 450px;
+}
+footer .upper ul {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+footer .upper li a {
+  font-size: 12px;
+  line-height: 0.5;
+  color: #828282;
+}
+footer .upper li a:hover {
+  color: #cfcfcf;
+  cursor: pointer;
+}
+footer .upper h6 {
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+footer .upper .row {
+  width: 40%;
+  margin: 40px 0;
+}
+footer .upper .left {
+  justify-content: space-between;
+  height: 100%;
+}
+footer .lower {
+  height: 70px;
+  background-color: #363636;
+}
+footer .lower .k_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .lower .k_container .button {
+  font-size: 14px;
+  color: white;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  border: 2px solid #0c7cec;
+}
+footer .lower .k_container .button:hover {
+  background-color: #67aff7;
+  cursor: pointer;
+  transition: 0.4s all;
+  color: black;
+}
+footer .lower .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .lower .icons div {
+  color: #67aff7;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-right: 15px;
+}
+footer .lower .icons .list-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: dimgray;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+footer .lower .icons .list-icons:hover {
+  background-color: #9c9c9c;
+  cursor: pointer;
+}
+footer .lower .icons i {
+  font-size: 14px;
+  color: #292929;
 }

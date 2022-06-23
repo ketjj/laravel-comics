@@ -1,0 +1,91 @@
+@import './utilities/mixin.scss';
+@import './utilities/vars.scss';
+
+footer{
+  background-color: $secondary-color;
+  .upper{
+    height: 350px;
+    background: url("/img/footer-bg.jpg") no-repeat top;
+    background-size: cover;
+    overflow: hidden;
+    .col{
+      padding-left: 0;
+      height: 200px;
+    }
+    img {
+      height: 450px; 
+    }
+    ul{
+      margin-block-start:0;
+      padding-inline-start: 0;
+    }
+    li a{
+      font-size: 12px;
+      line-height: .5;
+      color: lighten($secondary-color, 40% );
+      &:hover{
+        color: lighten($secondary-color, 70% );
+        cursor: pointer;
+      }  
+    }
+    h6{
+      color:white;
+      font-weight: 600;
+      @include upper;
+    }
+    .row{
+      width: 40%;
+      margin: 40px 0;
+    }
+    .left{
+      justify-content: space-between;
+      height: 100%;
+    }
+  }
+  .lower{
+    height: 70px;
+    background-color: lighten($secondary-color,
+     10%);
+    .k_container{
+      @include spaceBetween;
+      .button{
+        font-size: 14px;
+        color:white;
+        @include upper;
+        padding: 8px 16px;
+        border: 2px solid $primary-color;
+        &:hover{
+          background-color: lighten($primary-color, 20%);
+          @include pointer;
+          transition: .4s all;
+          color: black;
+        }
+      }
+      }
+      .icons{
+        @include center;
+        div{
+         color: lighten($primary-color, 20%);
+         @include upper;
+         font-weight: 600;
+         margin-right: 15px;
+        }
+        .list-icons{
+          @include center;
+          width: 30px;
+          height: 30px;
+          background-color: lighten($secondary-color, 30%);
+          border-radius: 50%;
+          margin-right: 12px;
+          &:hover{
+            background-color: lighten($secondary-color, 50%);
+            @include pointer;
+          }
+        }
+        i {
+          font-size: 14px;
+          color: lighten($secondary-color, 5%);         
+        }
+      }
+    }
+  }
