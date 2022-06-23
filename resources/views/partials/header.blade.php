@@ -1,7 +1,7 @@
 <header>
   <div class="k_container">
     <div>
-      <a href="{{ route('home') }}">
+      <a href="{{ route('comics') }}">
         <img src="{{ asset('img/dc-logo.png')}}" alt="Logo DC">
       </a>
     </div>

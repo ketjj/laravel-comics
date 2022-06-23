@@ -71,7 +71,44 @@ header ul a:hover, header ul a.active {
 .jumbotron {
   height: 450px;
   padding-top: 90px;
+  margin-bottom: 0;
   background: url("/img/jumbotron.jpg");
   background-size: cover;
   background-position: contain;
+}
+
+main {
+  background-color: #1c1c1c;
+  color: white;
+}
+main .k_container {
+  min-height: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+main .k_container .k_card {
+  width: 14%;
+  height: 200px;
+  margin-top: 50px;
+  margin-left: 20px;
+  opacity: 0.7;
+  overflow: hidden;
+}
+main .k_container .k_card:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+main .k_container .k_card .image {
+  height: 150px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+main .k_container .k_card .image img {
+  width: 100%;
+}
+main .k_container .k_card .image .title {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: white;
 }

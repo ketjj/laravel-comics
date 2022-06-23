@@ -1,0 +1,44 @@
+@import './utilities/mixin.scss';
+@import './utilities/vars.scss';
+
+main{
+  background-color: $secondary-color;
+  color: $color-white;
+   .k_container{
+    min-height: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    a{
+      background-color: azure;
+    }
+
+    .k_card{
+      width: 14%;
+      height: 200px;
+      margin-top: 50px;
+      margin-left: 20px;
+      opacity: 0.7;
+      overflow: hidden;
+       &:hover{
+           opacity: 1;
+           cursor: pointer;
+         }
+     
+      .image{
+        height: 150px;
+        overflow: hidden;
+        margin-bottom: 10px;
+        img{
+          width:100%;        
+        }
+        .title{
+         font-size: 10px;
+         color:white;     
+        
+        }
+      }
+    }
+  } 
+  
+}
